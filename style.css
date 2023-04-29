@@ -223,7 +223,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
-  /* -webkit-appearance: button; */
+  -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
   /* 2 */
@@ -270,7 +270,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
-  /* -webkit-appearance: textfield; */
+  -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */
@@ -402,7 +402,7 @@ embed,
 object {
   display: block;
   /* 1 */
-  /* vertical-align: middle; */
+  vertical-align: middle;
   /* 2 */
 }
 
@@ -522,6 +522,38 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -538,8 +570,16 @@ video {
   height: 4.5rem;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
 .w-32 {
   width: 8rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-full {
@@ -556,6 +596,12 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -570,14 +616,14 @@ video {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
+.bg-learToCode {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 23 33 / var(--tw-bg-opacity));
+}
+
 .bg-pink-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 168 212 / var(--tw-bg-opacity));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-violet-400 {
@@ -593,6 +639,10 @@ video {
 .bg-yellow-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-4 {
@@ -613,6 +663,26 @@ video {
   padding-right: 0.75rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -629,4 +699,21 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.hover\:bg-slate-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-opacity-60:hover {
+  --tw-bg-opacity: 0.6;
+}
+
+.hover\:opacity-60:hover {
+  opacity: 0.6;
 }
